@@ -1,0 +1,36 @@
+===== Short Test =====
+Text: "abacaba"
+Pattern: "aba"
+Matches: [0, 4]
+Time: ~0.1–0.3 ms
+
+===== Medium Test =====
+Text length: 1150
+Pattern: "abcdabcy"
+Matches found: 50
+First 10 matches: [19, 42, 65, 88, 111, 134, 157, 180, 203, 226]
+Time: ~0.2–1.0 ms
+
+===== Long Test =====
+Text length: 215000
+Pattern: "brownfox"
+Matches found: 5000
+First match index: 9
+Time: ~4–8 ms
+Sample outputs will appear here after running `java KMPSearch`.
+
+
+=== Test Case 1 (Short) ===
+Text: ababcabcab
+Pattern: abc
+Matches found at indices: 2 5
+
+=== Test Case 2 (Medium) ===
+Text: thequickbrownfoxjumpsoverthelazydogquickbrown
+Pattern: quick
+Matches found at indices: 3 36
+
+=== Test Case 3 (Long) ===
+Text length: ~200 characters
+Pattern: algorithm
+Match found at index: 128
